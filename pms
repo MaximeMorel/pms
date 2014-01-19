@@ -81,10 +81,10 @@ class Config(object):
     COLOURS = True
     CHECKUPDATE = True
     DDIR = get_default_ddir()
-    PLFILE = os.path.join(os.path.expanduser("~"), ".pms-playlist")
+    PLFILE = os.path.join(os.path.expanduser("."), ".pms-playlist")
 
 
-if os.path.exists(os.path.join(os.path.expanduser("~"), ".pms-debug")):
+if os.path.exists(os.path.join(os.path.expanduser("."), ".pms-debug")):
     logging.basicConfig(level=logging.DEBUG)
 
 if os.name == "nt":  # Disable colours for Windows
